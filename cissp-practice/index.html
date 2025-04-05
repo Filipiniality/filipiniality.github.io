@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <script src="script.js"></script>
+    <style>
+      button {
+        display: block;
+        text-align: left;
+        padding:10px;
+      }
+
+    </style>
+    <title>CISSP Practice Quiz</title>
+  </head>
+<body>
+<main>
+<h3>All of the following controls are important to specify when defining a data classification scheme, except:</h3>
+<button type="button" onclick="q1_wrong()">A. Marking, labeling, and handling procedures.</button>
+<button type="button" onclick="q1_wrong()">B. Physical security protections.</button>
+<button type="button" onclick="q1_wrong()">C. Backup and recovery procedures.</button>
+<button type="button" onclick="q1_correct()">D. Personnel clearance procedures.</button>
+<p id="q1"></p>
+<hr>
+
+<h3>Which of the following firewall types keeps track of each ongoing dialog between internal and external systems?</h3>
+<button type="button" onclick="q2_wrong()">A. Packet filtering.</button>
+<button type="button" onclick="q2_wrong()">B. Circuit-level proxy.</button>
+<button type="button" onclick="q2_correct()">C. Stateful</button>
+<button type="button" onclick="q2_wrong()">D. Application-level proxy.</button>
+<p id="q2"></p>
+<hr>
+
+<h3>Which of the following is NOT a recommended procedure to enact as part of an employee termination process?</h3>
+<button type="button" onclick="q3_wrong()">A. Immediately disable all of the employee’s accounts and passwords.</button>
+<button type="button" onclick="q3_wrong()">B. Ensure the employee surrenders any of the company’s badges and keys in their possession.</button>
+<button type="button" onclick="q3_correct()">C. Confiscate all devices in the employee’s possession that contain company data.</button>
+<button type="button" onclick="q3_wrong()">D. Ensure the employee leaves immediately upon termination, escorted by a supervisor.</button>
+<p id="q3"></p>
+<hr>
+
+<h3>Nancy is a new network administrator and has been faced with decision of implementing either direct access backup systems or sequential access backup storage devices. Which of the following does not properly describe these types of technologies?</h3>
+<button type="button" onclick="q4_wrong()">A. Any point on a Direct Access Storage Device may be promptly reached, whereas every point in between the current position and the desired position of a Sequential Access Storage Device must be traversed in order to reach the desired position</button>
+<button type="button" onclick="q4_correct()">B. Any point on a Sequential Access Storage Device may be promptly reached, whereas every point in between the current position and the desired position of a Direct Access Storage Device must be traversed in order to reach the desired position</button>
+<button type="button" onclick="q4_wrong()">C. Some tape drives have minimal amounts of Direct Access intelligence built in.</button>
+<button type="button" onclick="q4_wrong()">D. Tape drives are Sequential Access Storage Devices.</button>
+<p id="q4"></p>
+<hr>
+
+<h3>There are different types of biometric systems in the industry today. Some make authentication decisions based on behavior and some make authentication decisions based on physical attributes. Which of the following is the best description of their differences?</h3>
+<button type="button" onclick="q5_correct()">A. A system that uses physical attributes provides more accuracy than one that uses behavior attributes.</button>
+<button type="button" onclick="q5_wrong()">B. A system that uses behavior attributes provides more accuracy than one that uses physical attributes.</button>
+<button type="button" onclick="q5_wrong()">C. A fingerprint system is an example of a physical attribute and an iris system is an example of a behavior system.</button>
+<button type="button" onclick="q5_wrong()">D. A voice print system is an example of a behavior and signature dynamics is an example of a physical attribute.</button>
+<p id="q5"></p>
+<hr>
+
+<h3>MSP, PGP, PEM, and S/MIME are examples of which of the following?</h3>
+<button type="button" onclick="q6_wrong()">A. Digital signing algorithms</button>
+<button type="button" onclick="q6_correct()">B. E-mail standards.</button>
+<button type="button" onclick="q6_wrong()">C. Asymmetric cryptography algorithms</button>
+<button type="button" onclick="q6_wrong()">D. Hashing standards</button>
+<p id="q6"></p>
+<hr>
+
+<h3>Tom is setting up computers at a trade show for his company's booth. The computers will give customers the opportunity to access a new product but will also take them onto a live network. Which control would be the best fit to offer the necessary protection from public users gaining privileged access?</h3>
+
+<button type="button" onclick="q7_correct()">A. Constrained user interface</button>
+<button type="button" onclick="q7_wrong()">B. Role-based</button>
+<button type="button" onclick="q7_wrong()">C. Discretionary-based</button>
+<button type="button" onclick="q7_wrong()">D. Network segregation</button>
+<p id="q7"></p>
+<hr>
+
+<h3>Who has the primary responsibility of determining the classification level for information?</h3>
+<button type="button" onclick="q8_wrong()">A. Senior management</button>
+<button type="button" onclick="q8_wrong()">B. Owner</button>
+<button type="button" onclick="q8_correct()">C. User</button>
+<button type="button" onclick="q8_wrong()">D. Functional manager</button>
+<p id="q8"></p>
+<hr>
+
+<h3>One mode that triple-DES can work in uses three DES operations with an encrypt/decrypt/encrypt sequence and three separate keys. What is this called?</h3>
+<button type="button" onclick="q9_wrong()">A. Double DES</button>
+<button type="button" onclick="q9_wrong()">B. DES-EE3</button>
+<button type="button" onclick="q9_correct()">C. DES-EDE3</button>
+<button type="button" onclick="q9_wrong()">D. DES-EDE2</button>
+<p id="q9"></p>
+<hr>
+
+<h3>Which of the following items does not provide physical protection?</h3>
+<button type="button" onclick="q10_wrong()">A. Smart card</button>
+<button type="button" onclick="q10_wrong()">B. Token</button>
+<button type="button" onclick="q10_wrong()">C. Biometric device</button>
+<button type="button" onclick="q10_correct()">D. Single sign-on system</button>
+<p id="q10"></p>
+<hr>
+
+<h3>Which types of data are considered protected privacy data by the General Data Protection Regulation (GDPR)?</h3>
+<button type="button" onclick="q11_wrong()">A. Name and address</button>
+<button type="button" onclick="q11_wrong()">B. Health and biometric data</button>
+<button type="button" onclick="q11_wrong()">C. Political opinions</button>
+<button type="button" onclick="q11_correct()">D. All of the above</button>
+<p id="q11"></p>
+<hr>
+
+<h3>Which of the following has/have an incorrect definition?</h3>
+<p>i. Foreign key: An attribute of one table that is related to the cell of another table</p>
+<p>ii. Cell: An intersection of a row and column</p>
+<p>iii. Schema: Defines the structure of the database</p>
+<p></p>iv. Data dictionary: Central repository of data elements and their relationship</p>
+
+<button type="button" onclick="q12_correct()">A. i</button>
+<button type="button" onclick="q12_wrong()">B. i, ii, ii</button>
+<button type="button" onclick="q12_wrong()">C. i, ii, iv</button>
+<button type="button" onclick="q12_wrong()">D. i, ii, iii, iv</button>
+<p id="q12"></p>
+<hr>
+
+<h3>Corruption/modification is one of the biggest threats to an operations environment. Which of the following is the typical culprit in this type of threat?</h3>
+<button type="button" onclick="q13_correct()">A. Employees</button>
+<button type="button" onclick="q13_wrong()">B. Viruses</button>
+<button type="button" onclick="q13_wrong()">C. Bad code</button>
+<button type="button" onclick="q13_wrong()">D. Poor maintenance procedures</button>
+<p id="q13"></p>
+<hr>
+
+<h3>Paul is a new network administrator. He has found that the current network needs an intelligent unit to balance traffic and provide fault-tolerance. Which of the following technologies should Paul implement?</h3>
+<button type="button" onclick="q14_wrong()">A. Grid computing</button>
+<button type="button" onclick="q14_wrong()">B. Server farming</button>
+<button type="button" onclick="q14_wrong()">C. Federated servers</button>
+<button type="button" onclick="q14_correct()">D. Clustering</button>
+<p id="q14"></p>
+<hr>
+
+<h3>What is the most important reason war dialing is still a concern for modern security assessments?</h3>
+<button type="button" onclick="q15_wrong()">A. Free tools exist that make it easy for an attacker to scan huge blocks of phone numbers.</button>
+<button type="button" onclick="q15_wrong()">B. Some tools are relatively sophisticated and can fingerprint the systems that answer, enabling further automation</button>
+<button type="button" onclick="q15_correct()">C. Many organizations still employ modems for backup communications in a way that is not well secured.</button>
+<button type="button" onclick="q15_wrong()">D. Modern, advanced private branch exchanges (PBXs) can make an attacker’s job even easier through telephony diagnostic tools.</button>
+<p id="q15"></p>
+<hr>
+
+<h3>The concept of data hiding is used for what purpose?</h3>
+<button type="button" onclick="q16_wrong()">A. To prevent a requesting service from accessing an object when it asks</button>
+<button type="button" onclick="q16_wrong()">B.  To obscure the object label from the requestor, so it doesn’t know how to ask for it</button>
+<button type="button" onclick="q16_correct()">C. To permit access to objects only in the requestor’s layer</button>
+<button type="button" onclick="q16_wrong()">D. All of the above</button>
+<p id="q16"></p>
+<hr>
+
+<h3>What is true about a physical access control transponder?</h3>
+<button type="button" onclick="q17_correct()">A. It is a card that can be read without sliding it through a card reader</button>
+<button type="button" onclick="q17_wrong()">B. It is a passive proximity device.</button>
+<button type="button" onclick="q17_wrong()">C. It is a card that a user swipes through a card reader to gain access to a facility.</button>
+<button type="button" onclick="q17_wrong()">D. It exchanges tokens with an authentication server.</button>
+<p id="q17"></p>
+<hr>
+
+<h3>When work product satisfies real-world requirements and concepts, this is known as:</h3>
+<button type="button" onclick="q18_correct()">A. Validation</button>
+<button type="button" onclick="q18_wrong()">B. Verification</button>
+<button type="button" onclick="q18_wrong()">C. Concurrence</button>
+<button type="button" onclick="q18_wrong()">D. Accuracy</button>
+<p id="q18"></p>
+<hr>
+
+<h3>What type of attack would alter a configuration file after the system looked to see if it had that specific file?</h3>
+<button type="button" onclick="q19_wrong()">A. Covert channel</button>
+<button type="button" onclick="q19_wrong()">B. Backdoor</button>
+<button type="button" onclick="q19_wrong()">C. Fraggle</button>
+<button type="button" onclick="q19_correct()">D. TOC/TOU</button>
+<p id="q19"></p>
+<hr>
+
+<h3>Which of the following identifies a row within a relational database and is used for indexing?</h3>
+<button type="button" onclick="q20_wrong()">A. Foreign key</button>
+<button type="button" onclick="q20_correct()">B. Primary key</button>
+<button type="button" onclick="q20_wrong()">C. Cell</button>
+<button type="button" onclick="q20_wrong()">D. Tuple</button>
+<p id="q20"></p>
+<hr>
+
+<h3>Systems that are built on the OSI framework are considered open systems. What does this mean?</h3>
+<button type="button" onclick="q21_wrong()">A. They do not have authentication mechanisms configured by default.</button>
+<button type="button" onclick="q21_wrong()">B. They have interoperability issues.</button>
+<button type="button" onclick="q21_correct()">C. They are built with international protocols and standards so they can easily communicate
+  with other systems.</button>
+<button type="button" onclick="q21_wrong()">D. They are built with international protocols and standards so they can choose what types of
+  systems they will communicate with.</button>
+<p id="q21"></p>
+<hr>
+
+<h3>Which of the following is not a denial-of-service attack</h3>
+<button type="button" onclick="q22_wrong()">A. Teardrop</button>
+<button type="button" onclick="q22_correct()">B. Dictionary</button>
+<button type="button" onclick="q22_wrong()">C. Smurf</button>
+<button type="button" onclick="q22_wrong()">D. TCP SYN flood</button>
+<p id="q22"></p>
+<hr>
+
+<h3>What is the term used to describe the systematic evaluation of the exchange points between a graphical data system and the system’s user?</h3>
+<button type="button" onclick="q23_wrong()">A. Black box testing</button>
+<button type="button" onclick="q23_wrong()">B. Administrative testing</button>
+<button type="button" onclick="q23_wrong()">C. Stress testing</button>
+<button type="button" onclick="q23_correct()">D. Interface testing</button>
+<p id="q23"></p>
+<hr>
+
+<h3>What is the term used to describe the systematic evaluation of the exchange points between a graphical data system and the system’s user?</h3>
+<button type="button" onclick="q24_correct()">A. Buffer overflow testing</button>
+<button type="button" onclick="q24_wrong()">B. TOC/TOU</button>
+<button type="button" onclick="q24_wrong()">C. Covert channel</button>
+<button type="button" onclick="q24_wrong()">D. Data validation</button>
+<p id="q24"></p>
+<hr>
+
+<h3>Paul has been asked to evaluate implementing soft tokens across the enterprise. What exactly are soft tokens?</h3>
+<button type="button" onclick="q25_correct()">A. One-time password generators that reside in software</button>
+<button type="button" onclick="q25_wrong()">B. Synchronous cognitive passwords generated in software</button>
+<button type="button" onclick="q25_wrong()">C. Components that are required in SESAME implementations that provide the single-sign on component</button>
+<button type="button" onclick="q25_wrong()">D. The authenticator portion of Kerberos</button>
+<p id="q25"></p>
+<hr>
+
+<h3>Part of operational recovery is designing backup facility configurations to work in an acceptable manner so that business can continue. Which of the following is a setup that allows services to be distributed over two or more in-house centers?</h3>
+<button type="button" onclick="q26_wrong()">A. Hot site</button>
+<button type="button" onclick="q26_correct()">B. Multi-processing center</button>
+<button type="button" onclick="q26_wrong()">C. Mobile site</button>
+<button type="button" onclick="q26_wrong()">D. Reciprocal agreements</button>
+<p id="q26"></p>
+<hr>
+
+<br><br><br><br>
+</main>
+</body>
+</html>
