@@ -1,13 +1,15 @@
 :root {
-    --main-bg-color: rgb(30, 30, 46);
-    --white-text: rgb(205, 214, 244);
-    --navbar-bg: rgb(24, 24, 37);
+    --main-bg-color: rgb(38, 38, 53);
+    --dark-bg: rgb(24, 24, 37);
     --darker-bg: rgb(17, 17, 27);
+    --white-text: rgb(205, 214, 244);
+    --off-white: rgb(220, 224, 232);
 }
 
 html {
     background-color: var(--main-bg-color);
     color: var(--white-text);
+    size: 18px;
 }
 
 body {
@@ -16,6 +18,13 @@ body {
 
 header {
     text-align: center;
+}
+
+cite {
+    font-size:14px;
+}
+h1 {
+    letter-spacing: -1px;
 }
 
 h2, h3 {
@@ -43,26 +52,12 @@ footer a:hover {
 }
 
 .rating {
-    overflow-x: auto;
-    width: 175px;
     text-align: center;
+    width:50px;
 }
 
-.writing-art {
-    width: 50px;
-}
-
-.review {
-    display: inline-block;
-}
-
-.review-left {
-    float: left;
-    clear: both;
-}
-
-.review-right {
-    margin-left: 15px;
+.art {
+    width: 100px;
 }
 
 hr {
@@ -72,17 +67,15 @@ hr {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(220, 224, 232, 0.75), rgba(0, 0, 0, 0));
 }
 
-
+nav {
+    font-size: 20px;
+}
 
 nav ul {
     display: flex;
     list-style-type: none;
     justify-content: space-evenly;
-    background-color: var(--navbar-bg);
-}
-
-nav {
-    font-size: 20px;
+    background-color: var(--dark-bg);
 }
 
 nav li {
@@ -92,15 +85,20 @@ nav li {
 
 nav a {
     color: inherit;
-    font-weight:bolder;
+    font-weight: bolder;
+    text-decoration: none;
 }
 
-table {
-    border-radius: 10px;
+nav a::before, nav a::after {
+    content: "\2606";
 }
 
 tbody tr:nth-child(odd){
     background-color: var(--darker-bg);
+}
+
+thead, tbody tr:nth-child(even){
+    background-color: var(--dark-bg);
 }
 
 table caption {
@@ -109,14 +107,15 @@ table caption {
     text-transform: uppercase;
     padding-top:5px;
     padding-bottom:5px;
+    border-radius: 10px 10px 0 0;
 }
 
 td {
     padding: 5px;
 }
 
-.art {
-    width: 100px;
+.good {
+    list-style-image:url(./pictures/flameBullet.gif);
 }
 
 /* desktop version */
@@ -129,8 +128,8 @@ h1 {
 .container {
     max-width: 1000px;
     margin: 0 auto;
-    border-left: 1px solid white;
-    border-right: 1px solid white;
+    border-left: 1px solid var(--off-white);
+    border-right: 1px solid var(--off-white);
     padding: 5px;
     }
 
@@ -138,8 +137,31 @@ h1 {
     width: 200px;
 }
 
+.rating {
+    width: 175px;
+}
+
 html {
     background-image: url(./pictures/stardust.png);
     background-attachment: fixed;
+    }
+
+.review {
+    display: grid;
+    grid-template-areas: "left right";
+    column-gap:20px;
+    }
+
+.review-left img {
+    max-width:400px;
+    }
+
+.review-left {
+    grid-area: left;
+}
+
+.review-right {
+    grid-area:right;   
+    padding-left:5px;
     }
 }
