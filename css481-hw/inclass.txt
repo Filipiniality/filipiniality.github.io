@@ -1,0 +1,17 @@
+<!--
+<div id="container">
+<div class="box red"></div>
+<div class="box blue"></div>
+<div class="box green"></div>
+
+transition: everything in this block occurs on trigger
+
+for animation...
+animation: everything in this box triggers without input
+make a @keyframes rule as its own selector {}
+</div>
+-->
+
+<div class="box">
+<p>This is a box.</p>
+</div>
