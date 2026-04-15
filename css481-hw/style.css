@@ -1,146 +1,81 @@
 :root {
-    --main-bg-color: rgb(38, 38, 53);
-    --dark-bg: rgb(24, 24, 37);
-    --darker-bg: rgb(17, 17, 27);
-    --white-text: rgb(205, 214, 244);
-    --off-white: rgb(220, 224, 232);
+    --resurrect-deep-black: #313638;
+    --resurrect-black: #2e222f;
+    --resurrect-off-black: #3e3546;
+    --resurrect-off-black-purple: #7f708a;
+    --resurrect-deep-orange: #ea4f36;
+    --resurrect-orange: #fb6b1d;
+    --resurrect-yellow: #f9c22b;
+    --resurrect-lime-green: #d5e04b;
+    --resurrect-pale-yellow: #fbff86;
+    --resurrect-jade: #239063;
+    --resurrect-green: #1ebc73;
+    --resurrect-light-green: #91db69;
+    --resurrect-teal: #0b8a8f;
+    --resurrect-light-teal: #0eaf9b;
+    --resurrect-bluish-green: #30e1b9;
+    --resurrect-mint: #8ff8e2;
+    --resurrect-weird-purple: #484a77;
+    --resurrect-dark-blue: #4d65b4;
+    --resurrect-blue: #4d9be6;
+    --resurrect-light-blue: #8fd3ff;
+    --resurrect-plum: #6b3e75;
+    --resurrect-purple: #905ea9;
+    --resurrect-lavender: #a884f3;
+    --resurrect-purplish-pink: #eaaded;
+    --resurrect-blush: #ed8099;
+    --resurrect-red: #c32454;
+    --resurrect-pink: #f04f78;
+    --resurrect-orangish-pink: #f68181;
+    --resurrect-pinkish-orange: #fca790;
+    
+    --header-background: #C5E0F3;
 }
+
+/* Default aka Mobile */
 
 html {
-    background-color: var(--main-bg-color);
-    color: var(--white-text);
-    font-size: 18px;
-}
-
-body {
-    background-color: var(--main-bg-color);
+    background-color: var(--resurrect-pinkish-orange);
 }
 
 header {
-    text-align: center;
+    max-width: 1000px;
+    background-clip: padding-box;
+    background-color: var(--header-background);
+    margin: 25px auto;
+    
+    border-image-slice: 8 8 8 8;
+    border-image-width: 20px 20px 20px 20px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: round round;
+    image-rendering: pixelated;
+    
+    padding: 0px 24px 24px 24px;
+    border-image-source: url(./ui/funnyBorder.png);
+    border-style: solid;
 }
 
-cite {
-    font-size: 14px;
+nav ul {
+    list-style: none;
+    display: inline;
+    padding: 0;
 }
 
-h1 {
-    letter-spacing: -1px;
-}
-
-h2, h3 {
-    margin-top: 2px;
-    margin-bottom: 10px;
-}
-
-a {
-    color: var(--white-text);
-}
-
-main a:visited {
-    color: grey;
-}
-
-footer a:visited {
-    color: rebeccapurple;
-}
-
-a:hover {
-    text-shadow: 0 0 0px, 0 0 3px grey;
-}
-
-footer a:hover {
-    text-shadow: 0 0 0px, 0 0 3px purple;
-}
-
-.rating {
-    text-align: center;
-    width: 50px;
-}
-
-.art {
+nav ul li {
+    display: inline-block;
     width: 100px;
 }
 
-hr {
-    border: 0;
-    height: 2px;
-    margin-top: 1em;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(220, 224, 232, 0.75), rgba(0, 0, 0, 0));
+/* Tablet */
+@media only screen and (min-width: 600px) {
+    
 }
 
-nav {
-    font-size: 20px;
-}
-
-    nav ul {
-        display: flex;
-        list-style-type: none;
-        justify-content: space-evenly;
-        background-color: var(--dark-bg);
-    }
-
-    nav li {
-        width: 160px;
-        padding: 15px;
-    }
-
-    nav a {
-        color: inherit;
-        font-weight: bolder;
-        text-decoration: none;
-    }
-
-        nav a::before, nav a::after {
-            content: "\2606";
-        }
-
-tbody tr:nth-child(odd) {
-    background-color: var(--darker-bg);
-}
-
-thead, tbody tr:nth-child(even) {
-    background-color: var(--dark-bg);
-}
-
-table caption {
-    background-color: var(--darker-bg);
-    font-size: 20px;
-    text-transform: uppercase;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 10px 10px 0 0;
-}
-
-td {
-    padding: 5px;
-}
-
-.good {
-    list-style-image: url(./pictures/flameBullet.gif);
-}
-
-/* desktop version */
+/* Desktop */
 @media only screen and (min-width: 1000px) {
 
     h1 {
         font-size: 48px;
-    }
-
-    .container {
-        max-width: 1000px;
-        margin: 0 auto;
-        border-left: 1px solid var(--off-white);
-        border-right: 1px solid var(--off-white);
-        padding: 5px;
-    }
-
-    .art {
-        width: 200px;
-    }
-
-    .rating {
-        width: 175px;
     }
 
     html {
@@ -148,22 +83,4 @@ td {
         background-attachment: fixed;
     }
 
-    .review {
-        display: grid;
-        grid-template-areas: "left right";
-        column-gap: 20px;
-    }
-
-    .review-left img {
-        max-width: 400px;
-    }
-
-    .review-left {
-        grid-area: left;
-    }
-
-    .review-right {
-        grid-area: right;
-        padding-left: 5px;
-    }
 }
