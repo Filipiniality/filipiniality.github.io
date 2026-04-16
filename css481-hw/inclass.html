@@ -1,0 +1,79 @@
+<!-- innerHTML practice 
+
+Create array of fruits
+onclick, generate a list (ol,ul) of fruits
+-->
+
+<html>
+    <head>
+        <style>
+            button.gay {
+                background: linear-gradient(to right,
+                rgb(200, 190, 255) 0%,
+                rgb(222, 168, 248) 10%,
+                rgb(168, 222, 258) 30%,
+                rgb(189, 250, 205) 42%,
+                rgb(243, 250, 189) 58%,
+                rgb(250, 227, 189) 70%,
+                rgb(248, 172, 171) 95%,
+                rgb(254, 170, 212) 100%
+                );
+                border-radius: 5px;
+                border: solid;
+                margin: 5px 0px;
+        }
+        </style>
+        <script>
+            const gayFruits = ["Durian", "Dragon Fruit", "Mango", "Banana", "Ornj" ];
+
+            function summonGay() {
+
+                // opening tag
+                let myText = "<ul>";
+                // loop
+                for (const fruit of gayFruits) {
+                    myText+="<li>" + fruit + "</li>";    
+                }
+                // closing tag
+                myText+="</ul>";
+
+                // assign target
+                document.getElementById("my-div").innerHTML=myText;
+            }
+        </script>
+    </head>
+    <body>
+
+        <!-- Header, buttons diff colors, onclick change header to that color
+
+        Really bad scalability!-->
+        <h1>Behold the Chameleon</h1>
+        <button onclick="document.querySelector('h1').style.color='red'">Red</button>
+        <button onclick="document.querySelector('h1').style.color='green'">Green</button>
+        <button onclick="document.querySelector('h1').style.color='blue'">Blue</button>
+        <button onclick="document.querySelector('h1').style.background='linear-gradient(to right, rgb(200, 190, 255) 0%, rgb(222, 168, 248) 10%, rgb(168, 222, 258) 30%, rgb(189, 250, 205) 42%, rgb(243, 250, 189) 58%, rgb(250, 227, 189) 70%, rgb(248, 172, 171) 95%, rgb(254, 170, 212) 100%) '">Rainbow</button>
+        <button onclick="document.querySelector('h1').style.background='transparent'">Straight</button>
+
+        <!--Instead pass in default called event
+        event is a reserved keyword
+            in script, use event.target.textContent-->
+
+        <button class="gay" onClick="summonGay()">Click to summon the fruit squad</button>
+        <div id = "my-div"></div>
+
+        <!--  innerHTML doesn't sanitize input 
+
+        Event takes an event object
+            it tells browser stuff
+            by default every callback function of an event
+                takes an event object 
+        -->
+
+        <!-- Hardcode 10x10 table
+        2d array
+        nested for loops-->
+
+        <div id="my-table"></div>
+    </body>
+</html>
+

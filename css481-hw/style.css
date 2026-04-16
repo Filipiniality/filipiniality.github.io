@@ -28,14 +28,25 @@
     --resurrect-pink: #f04f78;
     --resurrect-orangish-pink: #f68181;
     --resurrect-pinkish-orange: #fca790;
-    
     --header-background: #C5E0F3;
+    --footer-background: #F8FFFF;
 }
 
 /* Default aka Mobile */
 
 html {
     background-color: var(--resurrect-pinkish-orange);
+}
+
+body {
+    font-family: "Comfortaa", "Helvetica", "Arial", sans-serif;
+}
+
+blockquote {
+    padding: 5px;
+    border-left: 5px solid var(--resurrect-blush);
+    background-color: var(--resurrect-purplish-pink);
+    font-style: oblique;
 }
 
 header {
@@ -55,6 +66,50 @@ header {
     border-style: solid;
 }
 
+footer {
+    background-clip: padding-box;
+    background-color: var(--footer-background);
+    margin: 25px auto;
+    
+    border-image-slice: 8 8 8 8;
+    border-image-width: 20px 20px 20px 20px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: round round;
+    image-rendering: pixelated;
+    
+    padding: 24px;
+    border-image-source: url(./ui/otherFunnyBorder.png);
+    border-style: solid;
+}
+
+iframe {
+    border:none;
+}
+
+table {
+    background-color:var(--resurrect-off-black);
+}
+
+table caption a{
+    text-decoration: none;
+    font-size: 24px;
+}
+
+tr td:first-of-type {
+    text-align:center;}
+
+td {
+    padding: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: var(--resurrect-plum);    
+}
+
+tr:nth-child(odd){
+    background-color: var(--resurrect-lavender);
+}
+
 nav ul {
     list-style: none;
     display: inline;
@@ -66,21 +121,48 @@ nav ul li {
     width: 100px;
 }
 
-/* Tablet */
-@media only screen and (min-width: 600px) {
-    
+#gold::before {
+    content: '🥇';
+}
+
+#silver::before {
+    content: '🥈';
+}
+
+#bronze::before {
+    content: '🥉';
+}
+
+hr {
+    border:none;
+    height:25px;
+    background-image:url('./ui/pixelStars.png');
+    background-size:50%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* Desktop */
 @media only screen and (min-width: 1000px) {
 
-    h1 {
-        font-size: 48px;
+    #container {
+        max-width: 800px;
+        margin: 0 auto;
     }
 
     html {
-        background-image: url(./pictures/stardust.png);
-        background-attachment: fixed;
+
+        background: linear-gradient(
+        to right,
+        rgba(200, 190, 255, 0.25) 0%,
+        rgba(222, 168, 248, 0.25) 10%,
+        rgba(168, 222, 258, 0.25) 30%,
+        rgba(189, 250, 205, 0.25) 42%,
+        rgba(243, 250, 189, 0.25) 58%,
+        rgba(250, 227, 189, 0.25) 70%,
+        rgba(248, 172, 171, 0.25) 95%,
+        rgba(254, 170, 212, 0.25) 100%
+  );
     }
 
 }
