@@ -133,6 +133,16 @@ nav ul li {
     content: '🥉';
 }
 
+.gallery {
+    display:flex;
+    flex-direction:column;
+}
+
+.gallery img {
+    max-width:70%;
+    margin: 0 auto;
+}
+
 hr {
     border:none;
     height:25px;
@@ -151,7 +161,6 @@ hr {
     }
 
     html {
-
         background: linear-gradient(
         to right,
         rgba(200, 190, 255, 0.25) 0%,
@@ -162,7 +171,14 @@ hr {
         rgba(250, 227, 189, 0.25) 70%,
         rgba(248, 172, 171, 0.25) 95%,
         rgba(254, 170, 212, 0.25) 100%
-  );
+        );
     }
 
+    .gallery {
+        flex-direction:row;
+    }
+
+    .gallery img {
+        height: 300px;
+    }
 }
